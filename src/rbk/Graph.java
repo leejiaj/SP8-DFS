@@ -1,10 +1,11 @@
 /**
  * Class to represent a graph
- *  @author rbk
+ * @author rbk
+ * Version 1.1: Updated constructor of GraphAlgorithm and its Graph g to be public (2018/10/24).
  * Do not modify this file.
  */
 
-package lxj171130;
+package rbk;
 
 import java.util.HashMap;
 import java.util.Iterator;
@@ -443,13 +444,13 @@ public class Graph implements Iterable<Graph.Vertex> {
      *  is used to store attributes of vertices during the algorithm.
      */
     public static class GraphAlgorithm<V extends Factory> {
-	Graph g;
+	public Graph g;
 	Factory vf;
 	Store<V> store;
 
 	/** @param: a graph g and a sample node vf used to create additional nodes using the Factory interface
 	 */
-	GraphAlgorithm(Graph g, Factory vf) {
+	public GraphAlgorithm(Graph g, Factory vf) {
 	    this.g = g;
 	    this.vf = vf;
 	    store = g.new Store<>(vf);
