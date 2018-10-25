@@ -24,7 +24,6 @@ public class DFS extends GraphAlgorithm<DFS.DFSVertex> {
 	}
 	int time;
 	int topNum;
-	DFSVertex dfsv;
 	LinkedList<Vertex> finishList;
 	
     public static class DFSVertex implements Factory {
