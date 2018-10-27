@@ -165,7 +165,7 @@ public class DFS extends GraphAlgorithm<DFS.DFSVertex> {
 	System.out.println();
 	
 	List<Vertex> finishList = topologicalOrder1(g);	
-	System.out.println("Topological oder of DAG using DFS");
+	System.out.println("Topological order of DAG using DFS");
 	if(finishList == null) {
 		System.out.println("--Cycles detected, Not a DAG--");
 	}
@@ -174,6 +174,7 @@ public class DFS extends GraphAlgorithm<DFS.DFSVertex> {
 		    System.out.print(u + " ");
 		}
 	}
+	System.out.println();
 	
     }
 }
