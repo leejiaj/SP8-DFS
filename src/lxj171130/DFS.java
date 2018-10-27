@@ -2,7 +2,8 @@
  * @author Leejia James
  * @author Nirbhay Sibal
  *
- * Comparison of hashing implementations
+ * Depth-first search (DFS)
+ * Finding topological order of DAG using DFS
  *
  * Ver 1.0: 2018/10/26
  */
@@ -129,7 +130,7 @@ public class DFS extends GraphAlgorithm<DFS.DFSVertex> {
     }
     
     /**
-     * Finding topological oder of a DAG using DFS
+     * Finding topological order of a DAG using DFS
      * @param Graph g
      * @return List of vertices in topological order, null if g is not a DAG
      */
